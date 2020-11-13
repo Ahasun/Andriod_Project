@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myday">
+    <!-- used for image cropper for images -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.example.myday.StoryActivity" />
+        <activity android:name="com.example.myday.AddStoryActivity" />
+        <activity android:name="com.example.myday.OptionsActivity" />
+        <activity android:name="com.example.myday.FollowersActivity" />
+        <activity android:name="com.example.myday.EditProfileActivity" />
+        <activity android:name="com.example.myday.CommentsActivity" />
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+        <activity android:name="com.example.myday.PostActivity" />
+        <activity android:name="com.example.myday.MainActivity" />
+        <activity android:name="com.example.myday.RegisterActivity" />
+        <activity android:name="com.example.myday.LoginActivity" />
+        <activity android:name="com.example.myday.StartActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
